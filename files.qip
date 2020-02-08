@@ -4,3 +4,4 @@ set_global_assignment -name VERILOG_FILE src/FPGA_ATetris.v
 set_global_assignment -name VERILOG_FILE src/DPRAMs.v
 set_global_assignment -name VERILOG_FILE src/ATARI_SLAPSTIK1.v
 set_global_assignment -name SYSTEMVERILOG_FILE Arcade-AtariTetris.sv
+set_global_assignment -name VERILOG_FILE src/joydb15.v
