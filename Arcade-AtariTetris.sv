@@ -147,8 +147,8 @@ wire  [7:0] ioctl_dout;
 wire [10:0] ps2_key;
 wire [15:0] joystk1_USB, joystk2_USB;
 
-wire [15:0] joystk1 = |status[31:30] ? {joydb15_1[9],joydb15_1[8] | joydb15_1[4],joydb15_1[3:0]} : joystk1_USB;
-wire [15:0] joystk2 =  status[31]    ? {joydb15_2[9],joydb15_2[8] | joydb15_2[4],joydb15_2[3:0]} : status[30] ? joystk1_USB : joystk2_USB;
+wire [15:0] joystk1 = |status[31:30] ? {joydb15_1[11],joydb15_1[10] | joydb15_1[4],joydb15_1[3:0]} : joystk1_USB;
+wire [15:0] joystk2 =  status[31]    ? {joydb15_2[11],joydb15_2[10] | joydb15_2[4],joydb15_2[3:0]} : status[30] ? joystk1_USB : joystk2_USB;
 
 wire [21:0] gamma_bus;
 
